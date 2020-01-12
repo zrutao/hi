@@ -9,4 +9,8 @@ public class ServerApplication {
     public void t3() {
         System.out.println("大家好");
     }
+    public void t5()
+    {
+        System.out.println("我是t5");
+    }
 }
