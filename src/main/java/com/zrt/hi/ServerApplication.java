@@ -6,4 +6,8 @@ public class ServerApplication {
     {
         System.out.println("你好");
     }
+    public void t2()
+    {
+        System.out.println("我好");
+    }
 }
