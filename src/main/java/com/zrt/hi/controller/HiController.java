@@ -35,13 +35,20 @@ public class HiController {
      * 插入一个学生信息
      */
     @GetMapping(value = "/create")
-    public String create()
+    public Stu create(Stu s)
     {
         Stu stu=new Stu();
-        stu.setName("zhaorutao");
-        stu.setAge(23);
+        stu.setName(s.getName());
+        stu.setAge(s.getAge());
         hiRepository.save(stu);
-        return "成功了";
+
+        Stu stu2=new Stu();
+        stu2.setName("赵汝涛");
+        stu2.setAge(23);
+        hiRepository.save(stu2);
+
+
+        return stu2;
     }
 
     /**
